@@ -20,9 +20,9 @@
       "type": "uid",
       "targetField": "name"
     },
-    "property": {
+    "properties": {
       "via": "location",
-      "model": "property"
+      "collection": "property"
     }
   }
 }

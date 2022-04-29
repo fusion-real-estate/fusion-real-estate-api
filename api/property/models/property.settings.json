@@ -69,16 +69,17 @@
       "type": "integer"
     },
     "category": {
-      "via": "property",
-      "model": "category"
+      "model": "category",
+      "via": "properties"
     },
     "location": {
-      "via": "property",
-      "model": "location"
+      "model": "location",
+      "via": "properties"
     },
     "facilities": {
-      "via": "property",
-      "collection": "facilities"
+      "via": "properties",
+      "collection": "facilities",
+      "dominant": true
     },
     "label": {
       "type": "enumeration",

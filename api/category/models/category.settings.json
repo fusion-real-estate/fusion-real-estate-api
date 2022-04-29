@@ -19,9 +19,9 @@
       "type": "uid",
       "targetField": "name"
     },
-    "property": {
+    "properties": {
       "via": "category",
-      "model": "property"
+      "collection": "property"
     }
   }
 }
