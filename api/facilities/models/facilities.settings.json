@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "facilities",
   "info": {
-    "name": "facilities"
+    "name": "facilities",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

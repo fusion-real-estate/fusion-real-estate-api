@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "locations",
   "info": {
-    "name": "location"
+    "name": "location",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

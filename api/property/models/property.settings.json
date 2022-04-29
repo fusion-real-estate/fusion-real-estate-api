@@ -69,16 +69,16 @@
       "type": "integer"
     },
     "category": {
-      "model": "category",
-      "via": "property"
+      "via": "property",
+      "model": "category"
     },
     "location": {
-      "model": "location",
-      "via": "property"
+      "via": "property",
+      "model": "location"
     },
     "facilities": {
-      "collection": "facilities",
-      "via": "property"
+      "via": "property",
+      "collection": "facilities"
     },
     "label": {
       "type": "enumeration",
@@ -89,6 +89,11 @@
     },
     "year": {
       "type": "date"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }
