@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facilities",
+  "info": {
+    "name": "facilities"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "property": {
+      "via": "facilities",
+      "model": "property"
+    }
+  }
+}

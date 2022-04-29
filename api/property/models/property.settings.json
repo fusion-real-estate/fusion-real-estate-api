@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "name": "property",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Rent",
+        "Sale"
+      ]
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "rooms": {
+      "type": "integer",
+      "required": true
+    },
+    "bathrooms": {
+      "type": "integer",
+      "required": true
+    },
+    "garage": {
+      "type": "integer"
+    },
+    "sqt": {
+      "type": "integer"
+    },
+    "category": {
+      "model": "category",
+      "via": "property"
+    },
+    "location": {
+      "model": "location",
+      "via": "property"
+    },
+    "facilities": {
+      "collection": "facilities",
+      "via": "property"
+    },
+    "label": {
+      "type": "enumeration",
+      "enum": [
+        "featured",
+        "hot"
+      ]
+    },
+    "year": {
+      "type": "date"
+    }
+  }
+}
