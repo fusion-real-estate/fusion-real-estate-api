@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_poular_properties",
+  "info": {
+    "name": "poularProperties",
+    "icon": "star-of-life"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "properties": {
+      "collection": "property"
+    }
+  }
+}
