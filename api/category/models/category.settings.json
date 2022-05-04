@@ -30,7 +30,7 @@
       "pluginOptions": {}
     },
     "properties": {
-      "via": "categories",
+      "via": "category",
       "collection": "property"
     }
   }
