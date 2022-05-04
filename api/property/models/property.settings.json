@@ -68,13 +68,15 @@
     "sqt": {
       "type": "integer"
     },
-    "category": {
+    "categories": {
+      "collection": "category",
       "via": "properties",
-      "model": "category"
+      "dominant": true
     },
-    "location": {
+    "locations": {
+      "collection": "location",
       "via": "properties",
-      "model": "location"
+      "dominant": true
     },
     "facilities": {
       "collection": "facilities",

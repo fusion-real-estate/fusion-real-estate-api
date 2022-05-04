@@ -19,10 +19,6 @@
       "type": "uid",
       "targetField": "name"
     },
-    "properties": {
-      "via": "category",
-      "collection": "property"
-    },
     "cover": {
       "model": "file",
       "via": "related",
@@ -32,6 +28,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "properties": {
+      "via": "categories",
+      "collection": "property"
     }
   }
 }
