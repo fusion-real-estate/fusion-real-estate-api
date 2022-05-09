@@ -77,8 +77,8 @@
       "via": "properties"
     },
     "facilities": {
-      "collection": "facilities",
       "via": "properties",
+      "collection": "facilities",
       "dominant": true
     },
     "label": {
